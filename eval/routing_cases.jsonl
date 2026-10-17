@@ -1,0 +1,19 @@
+{"q": "Top 5 product categories by units sold last quarter", "expected": "genie_sales_orders"}
+{"q": "How many orders came through the partner channel?", "expected": "genie_sales_orders"}
+{"q": "Average discount we give by customer segment", "expected": "genie_sales_orders"}
+{"q": "Which customers have open sev1 tickets and a low health score?", "expected": "genie_customer_support"}
+{"q": "Average time to resolve tickets by category", "expected": "genie_customer_support"}
+{"q": "CSAT trend by plan tier", "expected": "genie_customer_support"}
+{"q": "Headcount and average salary by department", "expected": "genie_hr_people"}
+{"q": "What are the top attrition reasons this year?", "expected": "genie_hr_people"}
+{"q": "Total overdue invoice amount by cost center", "expected": "genie_finance_ledger"}
+{"q": "Budget variance by fiscal quarter", "expected": "genie_finance_ledger"}
+{"q": "Cash collected per month", "expected": "genie_finance_ledger"}
+{"q": "What was our revenue last quarter?", "expected": "genie_finance_ledger", "acceptable": ["genie_sales_orders"], "note": "ambiguous: revenue exists in both"}
+{"q": "Which customers are the biggest accounts?", "expected": "genie_sales_orders", "acceptable": ["genie_customer_support"], "note": "ambiguous: customers in both"}
+{"q": "How many customers are at risk of churning?", "expected": "genie_customer_support"}
+{"q": "What is the USD to EUR rate on our invoices vs today?", "expected": "genie_finance_ledger", "acceptable": ["fx_latest"], "note": "stored FX vs live API"}
+{"q": "What is our refund policy for Pro customers?", "expected": "docs_agentic_search"}
+{"q": "How do we escalate a sev1 incident?", "expected": "docs_agentic_search", "acceptable": ["genie_customer_support"], "note": "process doc vs ticket data"}
+{"q": "Convert 3pm Tokyo time to London time", "expected": "time_convert_time"}
+{"q": "Get the live content of https://example.com", "expected": "fetch_fetch"}
