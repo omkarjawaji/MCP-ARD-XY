@@ -1,0 +1,4 @@
+{"id": "time-convert", "q": "Convert 3pm Tokyo time to London time", "args": {"source_timezone": "Asia/Tokyo", "time": "15:00", "target_timezone": "Europe/London"}, "expect_tools": ["search_tools", "time_convert_time"], "forbid": ["genie_*", "docs_*"], "max_calls": 2}
+{"id": "finance-overdue", "live": true, "q": "Total overdue invoice amount by cost center", "expect_tools": ["search_tools", "genie_finance_ledger"], "forbid": ["genie_sales_orders", "fetch_*"], "max_calls": 2}
+{"id": "support-sev1", "live": true, "q": "Which customers have open sev1 tickets and a low health score?", "expect_tools": ["search_tools", "genie_customer_support"], "forbid": ["genie_sales_orders"], "max_calls": 2}
+{"id": "policy-doc", "live": true, "q": "What is our refund policy for Pro customers?", "expect_tools": ["search_tools", "docs_agentic_search"], "forbid": ["genie_*"], "max_calls": 2}
